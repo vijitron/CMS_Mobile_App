@@ -1,4 +1,4 @@
-name: flutter_application_1
+name: CMS
 description: "CraneIQ Pro - Industrial Crane Monitoring"
 publish_to: 'none'
 
@@ -21,12 +21,13 @@ dependencies:
   supabase_flutter: ^2.1.2
   postgrest: ^2.3.0
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
-  web: ">=1.0.0"
+  # ✅ REMOVED: web: ">=1.0.0"
+  # The 'web' package v1.1.1 uses dart:js_interop types (JSObject, JSArray etc.)
+  # that are Web-only and break Android/iOS builds. Never pin it yourself.
 
 flutter:
   uses-material-design: true
